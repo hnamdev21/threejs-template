@@ -1,0 +1,55 @@
+import * as THREE from "three";
+
+export const CAMERA_TYPE = {
+  PERSPECTIVE: "perspective",
+  ORTHOGRAPHIC: "orthographic",
+};
+
+export const LIGHT_TYPE = {
+  AMBIENT: "ambient",
+  DIRECTIONAL: "directional",
+  POINT: "point",
+  SPOT: "spot",
+};
+
+export const blenderStandardMaterial = new THREE.MeshStandardMaterial({
+  side: THREE.DoubleSide,
+  alphaHash: false,
+  alphaToCoverage: false,
+  aoMapIntensity: 1,
+  blendAlpha: 0,
+  blendColor: 0x000000,
+  blendDst: 205,
+  blendEquation: 100,
+  blendSrc: 204,
+  blending: 1,
+  bumpScale: 1,
+  clipIntersection: false,
+  colorWrite: true,
+  depthFunc: 3,
+  depthTest: true,
+  depthWrite: true,
+  displacementBias: 0,
+  displacementMap: null,
+  displacementScale: 1,
+  dithering: false,
+  emissive: 0x000000,
+  emissiveIntensity: 1,
+  emissiveMap: null,
+  flatShading: false,
+  fog: true,
+  lightMap: null,
+  lightMapIntensity: 1,
+  metalness: 1,
+  roughness: 1,
+  stencilFail: 7680,
+  stencilFunc: 519,
+  stencilRef: 0,
+  stencilZFail: 7680,
+  stencilZPass: 7680,
+  toneMapped: true,
+  transparent: false,
+  vertexColors: false,
+  vertexTangents: false,
+  vertexNormals: false,
+});
